@@ -1,8 +1,9 @@
 ---
-- name: Test Create and Delete PostgreSQL Server
+- name: Test Create and Delete PostgreSQL Server Test
   block:
     - name: Print test step details
-      ansible.builtin.debug:
+      ansible.builtin.debug:   
+
         msg: "Run test with resource_group={{ test_resource_group }}"
 
     - name: Set vars for test
